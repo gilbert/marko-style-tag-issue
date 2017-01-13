@@ -15,6 +15,10 @@ module.exports = {
 }
 </script>
 
-<div>And an example component! Current value: <b>${state.count}</b></div>
+<style>
+.hello { color: green; }
+</style>
+
+<div class="hello">And an example component! Current value: <b>${state.count}</b></div>
 <button on-click('incrementCount')>+</button>
 <button on-click('resetCount')>reset</button>
