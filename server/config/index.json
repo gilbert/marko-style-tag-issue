@@ -1,3 +1,5 @@
 {
-  "routerPipeline": []
+  "routerPipeline": [
+    "./marko.js"
+  ]
 }

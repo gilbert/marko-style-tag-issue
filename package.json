@@ -4,9 +4,7 @@
   "description": "The next big thing, created with Concatapult.",
   "main": "server/index.js",
   "scripts": {
-    "setup": "node server/config/setup",
-    "start": "nodemon --config server/config/nodemon.json",
-    "test": "./test/run.sh"
+    "start": "./node_modules/.bin/browser-refresh server/index.js"
   },
   "author": "Concatapult <change-me@example.com>",
   "license": "MIT",
@@ -14,7 +12,12 @@
     "bluebird": "^3.4.6",
     "body-parser": "^1.15.2",
     "dotenv": "^2.0.0",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "lasso": "^2.8.3",
+    "lasso-marko": "^2.1.0",
+    "marko": "v4.0.0-rc.1",
+    "marko-magic": "concatapult/marko-magic",
+    "browser-refresh-taglib": "*"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -23,6 +26,10 @@
     "nodemon": "^1.11.0",
     "supertest": "^2.0.0",
     "supertest-as-promised": "^4.0.0",
-    "pult-cli": "*"
-  }
+    "pult-cli": "*",
+    "browser-refresh": "^1.7.0"
+  },
+  "addedPultModules": [
+    "marko"
+  ]
 }
